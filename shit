@@ -1,0 +1,293 @@
+local keys = {   
+    "lucasbigcock123",
+    "",
+	"",
+	"",
+	"",
+	"",
+	"",
+	"",
+	""
+
+}
+local account = {   
+	2852882855,   
+}
+
+--Burning#2888 AND lucaas / wsky#4836-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+local INST = Instance.new 
+local COL3RGB = Color3.fromRGB 
+local UDIM2 = UDim2.new 
+
+--Burning#2888 AND lucaas / wsky#4836-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+local loader = INST("ScreenGui")
+local main = INST("Frame")
+local upstuff = INST("Frame")
+local UIGradient_3 = INST("UIGradient")
+local name = INST("TextLabel")
+
+local poloska = INST("Frame")
+local UIGradient_4 = INST("UIGradient")
+
+local infogroupmain = INST("Frame")
+local cbimage = INST("ImageLabel")
+local gamelabel = INST("TextLabel")
+local version = INST("TextLabel")
+local updated = INST("TextLabel")
+local status = INST("TextLabel")
+local hex = INST("TextLabel")
+
+local optionsdivider = INST("Frame")
+local key = INST("TextBox")
+local load = INST("Frame")
+local loadbutton = INST("TextButton")
+local loadlabel = INST("TextLabel")
+local UIGradient = INST("UIGradient")
+local exit = Instance.new("Frame")
+local exitbutton = INST("TextButton")
+local exitlabel = INST("TextLabel")
+local UIGradient_2 = INST("UIGradient")
+local optionslabel = INST("TextLabel")
+
+--Burning#2888 AND lucaas / wsky#4836-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+loader.Name = "loader"
+loader.Parent = game.CoreGui
+loader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = loader
+main.BackgroundColor3 = COL3RGB(19, 19, 16)
+main.BorderColor3 = COL3RGB(20, 20, 20)
+main.Position = UDIM2(0.35, 0, 0.3, 0)
+main.Size = UDIM2(0, 400, 0, 300)
+
+upstuff.Name = "upstuff"
+upstuff.Parent = main
+upstuff.BackgroundColor3 = COL3RGB(19, 19, 16)
+upstuff.BackgroundTransparency = 0.000
+upstuff.BorderSizePixel = 0.000
+upstuff.Position = UDIM2(0, 0, 0, 0)
+upstuff.Size = UDIM2(0, 400, 0, 35)
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, COL3RGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, COL3RGB(130, 130, 130))}
+UIGradient_3.Rotation = 180
+UIGradient_3.Parent = upstuff
+
+name.Name = "name"
+name.Parent = upstuff
+name.BackgroundColor3 = COL3RGB(19, 19, 16)
+name.BackgroundTransparency = 1.000
+name.Position = UDIM2(0.04, 0, 0.03, 0)
+name.Size = UDIM2(0, 380, 0, 30)
+name.Font = Enum.Font.RobotoMono
+name.Text = "lucid v1.0.0"
+name.TextColor3 = COL3RGB(180, 180, 180)
+name.TextSize = 16.000
+name.TextXAlignment = Enum.TextXAlignment.Left
+name.BorderSizePixel = 0.000
+
+poloska.Name = "poloska"
+poloska.Parent = main
+poloska.BackgroundColor3 = COL3RGB(102, 0, 205)
+poloska.BackgroundTransparency = 0.000
+poloska.BorderSizePixel = 0.000
+poloska.Position = UDIM2(0, 0, 0.1, 0)
+poloska.Size = UDIM2(0, 400, 0, 5)
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, COL3RGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, COL3RGB(11, 90, 64))}
+UIGradient_4.Rotation = 90
+UIGradient_4.Parent = poloska
+
+infogroupmain.Name = "infogroupmain"
+infogroupmain.Parent = main
+infogroupmain.BackgroundColor3 = COL3RGB(22, 22, 22)
+infogroupmain.BorderColor3 = COL3RGB(30, 30, 30)
+infogroupmain.Position = UDIM2(0.012, 0, 0.133, 0)
+infogroupmain.Size = UDIM2(0, 388, 0, 155)
+
+gamelabel.Name = "gamelabel"
+gamelabel.Parent = infogroupmain
+gamelabel.BackgroundTransparency = 1.000
+gamelabel.Position = UDIM2(0.028, 0, 0, 0)
+gamelabel.Size = UDIM2(0, 200, 0, 30)
+gamelabel.Font = Enum.Font.RobotoMono
+gamelabel.Text = "Information:"
+gamelabel.TextColor3 = COL3RGB(200, 200, 200)
+gamelabel.TextSize = 14.000
+gamelabel.BorderSizePixel = 0.000
+gamelabel.TextXAlignment = Enum.TextXAlignment.Left
+
+version.Name = "version"
+version.Parent = infogroupmain
+version.BackgroundTransparency = 1.000
+version.Position = UDIM2(0.028, 0, 0.192, 0)
+version.Size = UDIM2(0, 200, 0, 30)
+version.Font = Enum.Font.RobotoMono
+version.Text = "Game: Counter Blox"
+version.TextColor3 = COL3RGB(200, 200, 200)
+version.TextSize = 14.000
+version.BorderSizePixel = 0.000
+version.TextXAlignment = Enum.TextXAlignment.Left
+
+updated.Name = "updated"
+updated.Parent = infogroupmain
+updated.BackgroundTransparency = 1.000
+updated.Position = UDIM2(0.0284, 0, 0.384, 0)
+updated.Size = UDIM2(0, 200, 0, 30)
+updated.Font = Enum.Font.RobotoMono
+updated.Text = "Version: BETA"
+updated.TextColor3 = COL3RGB(200, 200, 200)
+updated.TextSize = 14.000
+updated.BorderSizePixel = 0.000
+updated.TextXAlignment = Enum.TextXAlignment.Left
+
+status.Name = "status"
+status.Parent = infogroupmain
+status.BackgroundTransparency = 1.000
+status.Position = UDIM2(0.028, 0, 0.565, 0)
+status.Size = UDIM2(0, 200, 0, 30)
+status.Font = Enum.Font.RobotoMono
+status.Text = "Updated: 2022/1/16"
+status.TextColor3 = COL3RGB(200, 200, 200)
+status.TextSize = 14.000
+status.BorderSizePixel = 0.000
+status.TextXAlignment = Enum.TextXAlignment.Left
+
+hex.Name = "hex"
+hex.Parent = infogroupmain
+hex.BackgroundTransparency = 1.000
+hex.Position = UDIM2(0.028, 0, 0.757, 0)
+hex.Size = UDIM2(0, 200, 0, 30)
+hex.Font = Enum.Font.RobotoMono
+hex.Text = "Status: Working"
+hex.TextColor3 = COL3RGB(200, 200, 200)
+hex.TextSize = 14.000
+hex.BorderSizePixel = 0.000
+hex.TextXAlignment = Enum.TextXAlignment.Left
+
+optionsdivider.Name = "optionsdivider"
+optionsdivider.Parent = main
+optionsdivider.BackgroundColor3 = COL3RGB(22, 22, 22)
+optionsdivider.BorderColor3 = COL3RGB(30, 30, 30)
+optionsdivider.Position = UDIM2(0.013, 0, 0.677, 0)
+optionsdivider.Size = UDIM2(0, 387, 0, 90)
+
+key.Name = "key"
+key.Parent = optionsdivider
+key.BackgroundColor3 = COL3RGB(19, 19, 16)
+key.BorderColor3 = COL3RGB(30, 30, 30)
+key.BorderSizePixel = 1
+key.Position = UDIM2(0.026, 0, 0.333, 0)
+key.Size = UDIM2(0, 370, 0, 23)
+key.Font = Enum.Font.RobotoMono
+key.Text = "key"
+key.TextColor3 = COL3RGB(200, 200, 200)
+key.TextSize = 14.000
+key.TextXAlignment = Enum.TextXAlignment.Center
+
+load.Name = "load"
+load.Parent = optionsdivider
+load.BackgroundTransparency = 1.000
+load.LayoutOrder = 1
+load.Position = UDIM2(0.026, 0, 0.678, 0)
+load.Size = UDIM2(0, 180, 0, 23)
+load.ZIndex = 0
+
+loadlabel.Name = "loadlabel"
+loadlabel.Parent = load
+loadlabel.AnchorPoint = Vector2.new(0.5, 1)
+loadlabel.BackgroundColor3 = COL3RGB(19, 19, 16)
+loadlabel.BorderColor3 = COL3RGB(30, 30, 30)
+loadlabel.Position = UDIM2(0.5, 0, 1, 0)
+loadlabel.Size = UDIM2(0, 180, 0, 23)
+loadlabel.Font = Enum.Font.RobotoMono
+loadlabel.Text = "login"
+loadlabel.TextColor3 = COL3RGB(200, 200, 200)
+loadlabel.TextSize = 14.000
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, COL3RGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, COL3RGB(90, 90, 90))}
+UIGradient.Rotation = 90
+UIGradient.Parent = loadlabel
+
+loadbutton.Name = "loadbutton"
+loadbutton.Parent = load
+loadbutton.BackgroundColor3 = COL3RGB(255, 255, 255)
+loadbutton.BackgroundTransparency = 1.000
+loadbutton.BorderSizePixel = 0
+loadbutton.Size = UDIM2(0, 180, 0, 23)
+loadbutton.Position = UDIM2(0, 0, 0, 0)
+loadbutton.Font = Enum.Font.RobotoMono
+loadbutton.Text = ""
+loadbutton.TextColor3 = COL3RGB(0, 0, 0)
+loadbutton.TextSize = 14.000
+loadbutton.MouseButton1Click:Connect(function()
+					local user = false
+					local i = 1
+					local j = 5
+					while ( i < j ) do
+						if ( key.Text == keys[i] and ( account[i] == 0 or account[i] == game.Players.LocalPlayer.UserId )) then 
+							i = 999999
+							user = true
+							loadstring(game:HttpGet('https://raw.githubusercontent.com/wind91283/shit/main/kakat', true))()
+							game.CoreGui.loader:Destroy()
+						end
+						i = i + 1
+					end
+					if user == false then
+						game.Players.LocalPlayer:Kick("\nLucid.xyz\nNot whitelisted..")
+					end
+				end)
+
+			exit.Name = "exit"
+			exit.Parent = optionsdivider
+			exit.BackgroundTransparency = 1.000
+			exit.LayoutOrder = 1
+			exit.Position = UDIM2(0.517, 0, 0.678, 0)
+			exit.Size = UDIM2(0, 180, 0, 23)
+			exit.ZIndex = 0
+
+				exitbutton.Name = "exitbutton"
+				exitbutton.Parent = exit
+				exitbutton.BackgroundColor3 = COL3RGB(255, 255, 255)
+				exitbutton.BackgroundTransparency = 1.000
+				exitbutton.BorderSizePixel = 0
+				exitbutton.Size = UDIM2(0, 180, 0, 23)
+				exitbutton.Position = UDIM2(0, 0, 0, 0)
+				exitbutton.Font = Enum.Font.RobotoMono
+				exitbutton.Text = ""
+				exitbutton.TextColor3 = COL3RGB(0, 0, 0)
+				exitbutton.TextSize = 14.000
+				exitbutton.MouseButton1Click:Connect(function()
+					game.CoreGui.loader:Destroy()
+				end)
+
+				exitlabel.Name = "exitlabel"
+				exitlabel.Parent = exit
+				exitlabel.AnchorPoint = Vector2.new(0.5, 1)
+				exitlabel.BackgroundColor3 = COL3RGB(19, 19, 16)
+				exitlabel.BorderColor3 = COL3RGB(30, 30, 30)
+				exitlabel.Position = UDIM2(0.5, 0, 1, 0)
+				exitlabel.Size = UDIM2(0, 180, 0, 23)
+				exitlabel.Font = Enum.Font.RobotoMono
+				exitlabel.Text = "exit"
+				exitlabel.TextColor3 = COL3RGB(200, 200, 200)
+				exitlabel.TextSize = 14.000
+
+					UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, COL3RGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, COL3RGB(90, 90, 90))}
+					UIGradient_2.Rotation = 90
+					UIGradient_2.Parent = exitlabel
+
+			optionslabel.Name = "optionslabel"
+			optionslabel.Parent = optionsdivider
+			optionslabel.BackgroundTransparency = 1.000
+			optionslabel.Position = UDIM2(0.026, 0, 0, 0)
+			optionslabel.Size = UDIM2(0, 200, 0, 30)
+			optionslabel.Text = "options:"
+			optionslabel.TextColor3 = COL3RGB(200, 200, 200)
+			optionslabel.TextSize = 14.000
+			optionslabel.TextXAlignment = Enum.TextXAlignment.Left
+			optionslabel.BorderSizePixel = 0.000
+			optionslabel.Font = Enum.Font.RobotoMono
